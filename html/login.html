@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>班干信息登记</title>
+<link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+	<div class="wrap">
+		<form class="form" action="#" method="post">
+			<div class="item">
+				<label for="grade">年级</label> <input id="grade" type="text"
+					name="grade" value="请选择年级" readonly>
+				<ul tabindex="1" hidefocus="true" id="gradeList"
+					class="select-list dn">
+					<li>2014级</li>
+					<li>2015级</li>
+					<li>2016级</li>
+					<li>2017级</li>
+				</ul>
+			</div>
+			<div class="item">
+				<label for="major">专业</label> <input id="major" type="text"
+					name="major" value="请选择专业" readonly>
+				<ul tabindex="1" hidefocus="true" id="majorList"
+					class="select-list dn">
+				</ul>
+			</div>
+			<div class="item">
+				<label for="classes">班级</label> <input id="classes" type="text"
+					name="classes" value="请选择班级" readonly>
+				<ul tabindex="1" hidefocus="true" id="classesList"
+					class="select-list dn">
+				</ul>
+			</div>
+			<div class="item">
+				<label for="psword">密码</label> 
+				<input id="pswordText" type="text" name="psword" value="请输入密码"  maxlength="10" onkeydown="if(event.keyCode==32) return false">
+				<input id="psword" type="password" name="psword" value=""  maxlength="10" onkeydown="if(event.keyCode==32) return false">
+			</div>
+			<input id="login" type="button" value="登录">
+		</form>
+	</div>
+	<script type="text/javascript" src="../js/jQuery1.8.js"></script>
+	<script type="text/javascript" src="../js/login.js"></script>
+</body>
+</html>

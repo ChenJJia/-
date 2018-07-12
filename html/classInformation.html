@@ -1,0 +1,135 @@
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>班干信息登记</title>
+    <link rel="stylesheet" href="../css/information.css">
+<body>
+	<img class="background" src="../img/class_bg.png">
+	<a class="button" href="student.login">
+		<img class="exit-icon"  src="../img/btn-icon-exit.png"> <div
+			class="exit" >退出</div>
+	</a>
+	<div class="wrap">
+		<p class="tips">*以下情况可不填对应信息</p>
+		<p class="tips">
+			1.某班干无短号&nbsp;&nbsp;&nbsp;2.未设置文娱委员<span class="margin-left">（临时保存需把该班干的必填信息填写完整）</span>
+		</p>
+		<div class="table-head">
+			<img class="table-img" src="../img/table-head.png">
+			<h1 id="majorClass"></h1>
+		</div>
+		<table id="table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<th class="order">序号</th>
+					<th class="post">职务</th>
+					<th class="name">*姓名</th>
+					<th class="phone">*手机号码</th>
+					<th class="cornet last-cell">手机短号</th>
+				</tr>
+				<tr class="first-rows light-bg">
+					<td>1.</td>
+					<td>班长</td>
+					<td><input type="text" maxlength="4" onkeydown="if(event.keyCode==32) return false"></td>
+					<td><input type="text" maxlength="11" onkeydown="if(event.keyCode==32) return false"></td>
+					<td class="last-cell"><input type="text" maxlength="6" onkeydown="if(event.keyCode==32) return false"></td>
+				</tr>
+				<tr>
+					<td>2.</td>
+					<td>副班长</td>
+					<td><input type="text" maxlength="4" onkeydown="if(event.keyCode==32) return false"></td>
+					<td><input type="text" maxlength="11" onkeydown="if(event.keyCode==32) return false"></td>
+					<td class="last-cell"><input type="text" maxlength="6" onkeydown="if(event.keyCode==32) return false"></td>
+				</tr>
+				<tr class="light-bg">
+					<td>3.</td>
+					<td>团支书</td>
+					<td><input type="text" maxlength="4" onkeydown="if(event.keyCode==32) return false"></td>
+					<td><input type="text" maxlength="11" onkeydown="if(event.keyCode==32) return false"></td>
+					<td class="last-cell"><input type="text" maxlength="6" onkeydown="if(event.keyCode==32) return false"></td>
+				</tr>
+				<tr>
+					<td>4.</td>
+					<td>学习委员</td>
+					<td><input type="text" maxlength="4" onkeydown="if(event.keyCode==32) return false"></td>
+					<td><input type="text" maxlength="11" onkeydown="if(event.keyCode==32) return false"></td>
+					<td class="last-cell"><input type="text" maxlength="6" onkeydown="if(event.keyCode==32) return false"></td>
+				</tr>
+				<tr class="light-bg">
+					<td>5.</td>
+					<td>生活委员</td>
+					<td><input type="text" maxlength="4" onkeydown="if(event.keyCode==32) return false"></td>
+					<td><input type="text" maxlength="11" onkeydown="if(event.keyCode==32) return false"></td>
+					<td class="last-cell"><input type="text" maxlength="6" onkeydown="if(event.keyCode==32) return false"></td>
+				</tr>
+				<tr>
+					<td>6.</td>
+					<td>心理委员</td>
+					<td><input type="text" maxlength="4" onkeydown="if(event.keyCode==32) return false"></td>
+					<td><input type="text" maxlength="11" onkeydown="if(event.keyCode==32) return false"></td>
+					<td class="last-cell"><input type="text" maxlength="6" onkeydown="if(event.keyCode==32) return false"></td>
+				</tr>
+				<tr class="light-bg">
+					<td>7.</td>
+					<td>文体委员</td>
+					<td><input type="text" maxlength="4" onkeydown="if(event.keyCode==32) return false"></td>
+					<td><input type="text" maxlength="11" onkeydown="if(event.keyCode==32) return false"></td>
+					<td class="last-cell"><input type="text" maxlength="6" onkeydown="if(event.keyCode==32) return false"></td>
+				</tr>
+				<tr>
+					<td>8.</td>
+					<td>文娱委员</td>
+					<td><input type="text" maxlength="4" onkeydown="if(event.keyCode==32) return false"></td>
+					<td><input type="text" maxlength="11" onkeydown="if(event.keyCode==32) return false"></td>
+					<td class="last-cell"><input type="text" maxlength="6" onkeydown="if(event.keyCode==32) return false"></td>
+				</tr>
+				<tr class="light-bg">
+					<td>9.</td>
+					<td>信息委员</td>
+					<td><input type="text" maxlength="4" onkeydown="if(event.keyCode==32) return false"></td>
+					<td><input type="text" maxlength="11" onkeydown="if(event.keyCode==32) return false"></td>
+					<td class="last-cell"><input type="text" maxlength="6" onkeydown="if(event.keyCode==32) return false"></td>
+				</tr>
+				<tr>
+					<td>10.</td>
+					<td>纪律委员</td>
+					<td><input type="text" maxlength="4" onkeydown="if(event.keyCode==32) return false"></td>
+					<td><input type="text" maxlength="11" onkeydown="if(event.keyCode==32) return false"></td>
+					<td class="last-cell"><input type="text" maxlength="6" onkeydown="if(event.keyCode==32) return false"></td>
+				</tr>
+				<tr class="light-bg">
+					<td>11.</td>
+					<td>组织委员</td>
+					<td><input type="text" maxlength="4" onkeydown="if(event.keyCode==32) return false"></td>
+					<td><input type="text" maxlength="11" onkeydown="if(event.keyCode==32) return false"></td>
+					<td class="last-cell"><input type="text" maxlength="6" onkeydown="if(event.keyCode==32) return false"></td>
+				</tr>
+				<tr>
+					<td>12.</td>
+					<td>宣传委员</td>
+					<td><input type="text" maxlength="4" onkeydown="if(event.keyCode==32) return false"></td>
+					<td><input type="text" maxlength="11" onkeydown="if(event.keyCode==32) return false"></td>
+					<td class="last-cell"><input type="text" maxlength="6" onkeydown="if(event.keyCode==32) return false"></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="bottom-btn">
+			<input id="save" type="button" value="临 时 保 存"> <input
+				id="submit" type="button" value="提 交">
+		</div>
+	</div>
+	<div class="dn" id="cover"></div>
+	<div class="dn" id="bombFrame">
+		<p class="frame-text">确认提交</p>
+		<input id="confirm" type="button" value="确定" > <input
+			id="cancel" type="button" value="取消" >
+	</div>
+	<div class="dn" id="resultFrame">
+		<img id="cross" src="../img/pop-icon-del.png">
+		<p id="resultText">提交成功</p>
+	</div>
+	<script type="text/javascript" src="../js/jQuery1.8.js"></script>
+	<script type="text/javascript" src="../js/information.js"></script>
+</body>
+</html>

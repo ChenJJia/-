@@ -1,0 +1,103 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>班干通讯录后台</title>
+    <link rel="stylesheet" href="../css/manage.css">
+</head>
+<body>
+<div id="wrap">
+        <div class="head">
+            <h1 class="title">班干通讯录后台</h1>
+            <a class="exit" href="background.login">退出</a>
+        </div>
+        <div id="content">
+            <div id="choiceBtn">
+                <div class="item">
+                    <input id="grade" type="text" value="2014级" readonly >
+                    <ul tabindex="1" hidefocus="true" id="gradeList" class="select-list">
+                        <li class="li-bg">2017级</li>
+                        <li>2016级</li>
+                        <li class="li-bg">2015级</li>
+                        <li>2014级</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <input id="classes" type="text" value="班级" readonly>
+                    <ul tabindex="1" hidefocus="true" id="classesList" class="select-list">
+                    </ul>
+                </div>
+                <div class="item">
+                    <input id="post" type="text" value="职务" readonly>
+                    <ul tabindex="1" hidefocus="true" id="postList" class="select-list">
+                        <li>不选</li>
+                        <li>班长</li>
+                        <li>副班长</li>
+                        <li>团支书</li>
+                        <li>学习委员</li>
+                        <li>生活委员</li>
+                        <li>心理委员</li>
+                        <li>文体委员</li>
+                        <li>文娱委员</li>
+                        <li>信息委员</li>
+                        <li>纪律委员</li>
+                        <li>组织委员</li>
+                        <li>宣传委员</li>
+                    </ul>
+                </div>
+                <input id="add" type="button" value="添加班干信息">
+            </div>
+            <table id="table" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <th class="grade"><span>年级</span></th>
+                        <th class="classes"><span>专业班级</span></th>
+                        <th class="post"><span>职务</span></th>
+                        <th class="name"><span>姓名</span></th>
+                        <th class="long-phone"><span>长号</span></th>
+                        <th class="short-phone"><span>短号</span></th>
+                        <th class="operation"><span>操作</span></th>
+                    </tr>
+                </tbody>
+            </table>
+            <input id="loadMore" class="dn" type="button" value="加载更多">
+        </div>
+        <p class="copyright">&copy;2013-2017 天高科技工作室 All rights reserved</p>
+    </div>
+    <div id="cover" class="dn"></div>
+    <div id="operationFrame" class="dn">
+        <h2 class="frame-title">删除信息</h2>
+        <p class="tips-text">您正在删除以下班干信息</p>
+        <table id="operationTable" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <th class="grade"><span>年级</span></th>
+                    <th class="classes"><span>专业班级</span></th>
+                    <th class="post"><span>职务</span></th>
+                    <th class="name"><span>姓名</span></th>
+                    <th class="long-phone"><span>长号</span></th>
+                    <th class="short-phone"><span>短号</span></th>
+                    <th class="operation"><span>信息删除</span></th>
+                </tr>
+                <tr class="tr-bg">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" maxlength="4" onkeydown="if(event.keyCode==32) return false"></td>
+                    <td><input type="text" maxlength="11" onkeydown="if(event.keyCode==32) return false"></td>
+                    <td><input type="text" maxlength="6" onkeydown="if(event.keyCode==32) return false"></td>
+                    <td><span id="confirm">确认</span><span id="cancel">取消</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="successFrame" class="dn">
+        <h2 class="success-text">删除成功</h2>
+        <input id="successConfirm" type="button" value="确认">
+    </div>
+    <script type="text/javascript" src="../js/jQuery1.8.js"></script>
+    <script type="text/javascript" src="../js/manage.js"></script>
+</body>
+</body>
+</html>

@@ -1,0 +1,133 @@
+html,body,div,ul,li,span,img,a,button,input,select,table,td,tr,th,p,h1,h2,h3,h4,h5,h6,header,section {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+input,button,select,a {
+    outline: 0;
+    border: 0;
+}
+.dn{
+    display: none;
+}
+.db{
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+.active-input{
+    background: url(../img/listbox_dropDown_active.png) no-repeat center!important;
+}
+.active-psword{
+    background: url(../img/listbox_eye_active.png) no-repeat center!important;
+}
+
+html,body{
+    height: 100%;
+}
+body{
+    position: relative;
+}
+.wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -325px;
+    margin-top: -250px;
+    width: 650px;
+    height: 500px;
+    background: url(../img/login_bg.png) no-repeat center;
+}
+
+.form{
+    position: absolute;
+    right: 60px;
+    top: 110px;
+    width: 236px;
+    height: 300px;
+    /* border: 1px solid red; */
+    font-family: "微软雅黑";
+    text-align: center;
+}
+.item{
+    position: relative;
+    margin-top: 18px;
+}
+.item>label{
+    font-size: 14px;
+    color: #434343;
+}
+.item>input{
+    padding-left: 15px;
+    width: 185px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #8d8b8b;
+    background: url(../img/listbox_dropDown.png) no-repeat center;
+    cursor: pointer;
+}
+#psword,#pswordText{
+background: url(../img/listbox.png) no-repeat center;
+cursor: text;
+}
+#psword{
+display: none;
+}
+#errorPsword{
+    position:absolute;
+    top: 35px;
+    left: 100px;
+    font-size: 12px;
+    color: #ff0000;
+}
+.select-list{
+    position: absolute;
+    left: 35px;
+    z-index: 1;
+    padding-top: 2px;
+    width: 199px;
+    height: 86px;
+    font-size: 14px;
+    color: #434343;
+    background: url(../img/bg-options.png) no-repeat center;
+    outline: none;
+    overflow: auto;
+}
+.select-list>li{
+    margin-top: 1px;
+    cursor: pointer;
+}
+.select-list>li:hover{
+    background-color: #eee;
+}
+#login{
+    margin-top: 60px;
+    padding-bottom: 10px;
+    width: 127px;
+    height: 45px;    
+    font-size: 16px;
+    color: #fff;
+    background: url(../img/btn_login_default.png) no-repeat center;
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+#login:hover{
+    background: url(../img/btn_login_hover.png) no-repeat center;
+}
